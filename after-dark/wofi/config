@@ -1,0 +1,14 @@
+prompt=...
+allow-images=true
+insensitive=true
+hide-scroll=true
+matching=fuzzy
+no-actions=true
+term=alacritty
+width=800
+height=400
+location=center
+always-show=true
+image-size=32
+columns=1
+show=drun

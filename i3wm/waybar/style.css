@@ -1,0 +1,53 @@
+* {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    min-height: 0;
+}
+
+#waybar {
+    color: white;
+    background-color: black;
+    font-family: "Lilex";
+}
+
+#workspaces button {
+    font-size: 14px;
+    margin-right: 1px;
+    background-color: #222222; 
+    border: 2px solid #333333;
+    color: #888888;
+}
+
+#workspaces button.active {
+    color: #FFFFFF;
+    background-color: #285577;
+    border: 2px solid #4C7899;
+}
+
+#workspaces button.empty {
+    color: #222222; 
+    background-color: black;
+    border: none;
+}
+
+#clock,
+#memory,
+#cpu,
+#disk,
+#custom-gpu-usage,
+#wireplumber,
+#bluetooth {
+    color: #FFFFFF;
+}
+
+#network.ssid,
+#network.ip {
+    color: #00FF00;
+}
+
+#custom-separator {
+    color: #666666;
+    margin: 0px 5px;
+}

@@ -1,0 +1,11 @@
+[general]
+import = ["~/.config/alacritty_themes/after_dark.toml"]
+
+[window]
+padding.x = 10
+padding.y = 10
+
+[font]
+normal.style = "Medium"
+normal.family = "Lilex"
+size = 22

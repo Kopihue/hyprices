@@ -1,0 +1,13 @@
+[general]
+import = [
+    "/home/kopihue/.config/alacritty_themes/rose_pine.toml"
+]
+
+[window]
+padding.x = 10
+padding.y = 10
+
+[font]
+normal.style = "Medium"
+normal.family = "Lilex"
+size = 22

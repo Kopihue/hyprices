@@ -1,0 +1,81 @@
+{
+    "height": 21,
+    "position": "bottom",
+
+    "modules-left": [
+	"custom/gpu-usage",
+	"custom/separator",
+	"cpu",
+	"custom/separator",
+	"disk",
+	"custom/separator",
+	"memory",
+	"custom/separator",
+	"wireplumber",
+    ],
+    "modules-center": [
+	"hyprland/workspaces",
+    ],
+    "modules-right": [
+	"bluetooth",
+	"custom/separator",
+	"network#ssid", 
+	"custom/separator",
+	"network#ip",
+	"custom/separator",
+	"clock"
+    ],
+
+    "hyprland/workspaces": {
+	"persistent-workspaces": {
+	    "HDMI-A-1": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+	    "DP-1": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+	}
+    },
+
+    "clock": {
+	"format": "{:%A %d - %H:%M}",
+    },
+
+    "network#ip": {
+	"format": "IP: {ipaddr}",
+    },
+
+    "network#ssid": {
+	"format": "INT: {essid}"
+    },
+
+    "memory": {
+	"interval": 1,
+	"format": "RAM: {used}GB",
+    },
+
+    "disk": {
+	"format": "DISK: {used}",
+    },
+
+    "cpu": {
+	"interval": 2,
+	"format": "CPU: {usage}%",
+    },
+
+    "custom/gpu-usage": {
+	"format": "GPU: {}",
+	"exec": "gpu-usage-waybar",
+	"return-type": "json",
+	"on-click": "ghostty -e nvtop"
+    },
+
+    "wireplumber": {
+	"format": "SPK: {volume}%",
+	"format-muted": "SPK: MUT",
+    },
+
+    "bluetooth": {
+	"format": "BTH: {device_alias}",
+    },
+
+    "custom/separator": {
+	"format": "|"
+    }
+}
