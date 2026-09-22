@@ -1,0 +1,31 @@
+# Colors (After Dark)
+
+# Default colors
+[colors.primary]
+background = '#0E131B'
+foreground = '#d4ddef'
+
+[colors.cursor]
+text = '#d4ddef'
+
+# Normal colors
+[colors.normal]
+black   = '#010101'
+red     = '#e16ba0'
+green   = '#98c379'
+yellow  = '#e8c37d'
+blue    = '#88abf9'
+magenta = '#ba7bcc'
+cyan    = '#53c6ba'
+white   = '#ffffff'
+
+# Bright colors
+[colors.bright]
+black   = '#343434'
+red     = '#ea95bb'
+green   = '#b3d39c'
+yellow  = '#f0d7a8'
+blue    = '#b9cdfb'
+magenta = '#cda0da'
+cyan    = '#79d3c9'
+white   = '#ffffff'
