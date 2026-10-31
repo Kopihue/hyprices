@@ -1,8 +1,9 @@
 require("kopischemes").setup({
-    name = "after-dark",
+    name = "nord",
     setup = {
-	transparency = false,
+	transparency = true,
 	italic = false,
 	bold = false,
+	line_number_pink = true,
     }
 })

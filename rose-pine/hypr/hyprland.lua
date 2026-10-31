@@ -3,12 +3,12 @@
 ------------------
 hl.monitor({
     output   = "HDMI-A-1",
-    mode     = "1920x1080@60",
+    mode     = "1920x1080@75",
     position = "0x0",
     scale    = "auto",
 })
 hl.monitor({
-    output = "DP-1",
+    output   = "DP-1",
     mode     = "1920x1080@60",
     position = "1920x0",
     scale    = "auto",
@@ -27,7 +27,7 @@ local browser  = "firefox"
 hl.on("hyprland.start", function () 
     hl.exec_cmd("waybar & hyprpaper")
     hl.exec_cmd("ollama serve")
-    hl.exec_cmd("systemctl --user start xppentablet")
+    hl.exec_cmd("otd-daemon")
 end)
 
 

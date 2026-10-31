@@ -1,10 +1,10 @@
 vim.opt.shiftwidth = 4
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.guicursor = ""
 vim.opt.scrolloff = 999
 vim.opt.clipboard = "unnamedplus"
 vim.opt.cursorline = true
+vim.opt.guicursor = ""
 
 vim.api.nvim_create_autocmd("LspAttach", {
     callback = function(args)
@@ -14,3 +14,4 @@ vim.api.nvim_create_autocmd("LspAttach", {
 	end
     end,
 })
+

@@ -8,44 +8,39 @@
 
 #waybar {
     color: white;
-    background-color: #191724;
+    background-color: transparent;
     font-family: "Lilex";
     font-size: 16px;
 }
 
 #workspaces button {
-    font-size: 16px;
-    margin-right: 3px;
-    color: #ebbcba;
-}
-
-#workspaces button.active {
-    color: #eb6f92;
-    background-color: #ebbcba;
-    border: 2px solid #31748f;
-    color: black;
-}
-
-#workspaces button.empty {
-    color: #474545;
-}
-
-#clock,
-#memory,
-#cpu,
-#network.ssid {
+    font-size: 20px;
+    margin-right: 5px;
     color: #31748f;
 }
 
-#network.ip,
-#disk,
-#custom-gpu-usage,
-#wireplumber,
-#bluetooth {
+#workspaces button.active {
     color: #ebbcba;
 }
 
+#workspaces button.empty {
+    color: #232323;
+}
+
+#custom-gpu-usage,
+#cpu,
+#memory,
+#disk,
+#bluetooth,
+#wireplumber,
+#network.ip,
+#network.ssid,
+#clock.day,
+#clock.hour {
+    color: #31748f;
+}
+
 #custom-separator {
-    color: #eb6f92;
+    color: #353535;
     margin: 0px 5px;
 }

@@ -1,5 +1,4 @@
 require("options.options")
 require("options.keymaps")
 
-require("plugins.neokopy")
-
+require("plugins.vim_pack")

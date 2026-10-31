@@ -1,0 +1,96 @@
+{
+    "height": 32,
+    "position": "bottom",
+
+    "modules-left": [
+	"network#ssid",
+	"custom/separator",
+	"clock#day",
+    ],
+    "modules-center": [
+	"bluetooth",
+	"custom/separator",
+	"memory",
+	"custom/separator",
+	"custom/gpu-usage",
+	"custom/separator",
+	"hyprland/workspaces",
+	"custom/separator",
+	"cpu",
+	"custom/separator",
+	"disk",
+	"custom/separator",
+	"wireplumber",
+    ],
+    "modules-right": [
+	"clock#hour",
+	"custom/separator",
+	"network#ip",
+    ],
+
+    "hyprland/workspaces": {
+	"format": "{icon}",
+	"format-icons": {
+	    "default": "󱀝",
+	    "active": "󰣏",
+	},
+	"persistent-workspaces": {
+	    "HDMI-A-1": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+	    "DP-1": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+	}
+    },
+
+    "clock#day": {
+	"format": "DAY: <span color=\"#a3be8c\">{:%A %d}</span> ",
+    },
+
+    "clock#hour": {
+	"format": "<span color=\"#a3be8c\">{:%H:%M:%S}</span> :CLK",
+	"interval": 1,
+    },
+
+    "network#ip": {
+	"format": "<span color=\"#b48ead\">{ipaddr}</span> :IP ",
+	"format-disconnected": " INT: <span color=\"#bf616a\">DISCONNECTED</span>", 
+    },
+
+    "network#ssid": {
+	"format": " INT: <span color=\"#b48ead\">{essid}</span>",
+	"format-disconnected": " INT: <span color=\"#bf616a\">DISCONNECTED</span>",
+    },
+
+    "memory": {
+	"interval": 1,
+	"format": "RAM: <span color=\"#88c0d0\">{used}GB</span>",
+    },
+
+    "disk": {
+	"format": "<span color=\"#88c0d0\">{used}</span> :DISK",
+    },
+
+    "cpu": {
+	"interval": 2,
+	"format": "<span color=\"#8fbcbb\">{usage}%</span> :CPU",
+    },
+
+    "custom/gpu-usage": {
+	"format": "GPU: <span color=\"#8fbcbb\">{}</span>",
+	"exec": "gpu-usage-waybar",
+	"return-type": "json",
+	"on-click": "ghostty -e nvtop"
+    },
+
+    "wireplumber": {
+	"format": "<span color=\"#81a1c1\">{volume}%</span> :SPK",
+	"format-muted": "<span color=\"#ebcb8b\">MUT</span> :SPK",
+    },
+
+    "bluetooth": {
+	"format-connected": "BTH: <span color=\"#81a1c1\">{device_alias}</span>",
+	"format-on": "BTH: <span color=\"#ebcb8b\">None</span>",
+    },
+
+    "custom/separator": {
+	"format": "|"
+    }
+}

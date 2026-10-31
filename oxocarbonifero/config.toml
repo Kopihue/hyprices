@@ -1,0 +1,9 @@
+[execute]
+reload = [
+    "hyprpaper",
+    "waybar",
+]
+commands = [
+    ["hyprctl", "setcursor", "Bibata-Original-Classic", "24"],
+    ["hyprctl", "reload"],
+]

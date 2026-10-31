@@ -1,10 +1,9 @@
 require("rose-pine").setup({
-    variant = "main", -- auto, main, moon, or dawn
-
+    variant = "main",
     styles = {
-        bold = false,
-        italic = false,
-        transparency = false,
+	transparency = false,
+	italic = false,
+	bold = false,
     },
 })
 

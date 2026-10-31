@@ -1,0 +1,94 @@
+{
+    "height": 32,
+    "position": "bottom",
+
+    "modules-left": [
+	"network#ssid",
+	"custom/separator",
+	"clock#day",
+    ],
+    "modules-center": [
+	"bluetooth",
+	"custom/separator",
+	"memory",
+	"custom/separator",
+	"custom/gpu-usage",
+	"custom/separator",
+	"hyprland/workspaces",
+	"custom/separator",
+	"cpu",
+	"custom/separator",
+	"disk",
+	"custom/separator",
+	"wireplumber",
+    ],
+    "modules-right": [
+	"clock#hour",
+	"custom/separator",
+	"network#ip",
+    ],
+
+    "hyprland/workspaces": {
+	"format": "{icon}",
+	"format-icons": {
+	    "default": "󱀝",
+	    "active": "󰣏",
+	},
+	"persistent-workspaces": {
+	    "HDMI-A-1": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+	    "DP-1": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+	}
+    },
+
+    "clock#day": {
+	"format": "DAY: <span color=\"#ee5396\">{:%A %d}</span> ",
+    },
+
+    "clock#hour": {
+	"format": "<span color=\"#ee5396\">{:%H:%M:%S}</span> :CLK",
+	"interval": 1,
+    },
+
+    "network#ip": {
+	"format": "<span color=\"#ee5396\">{ipaddr}</span> :IP ",
+    },
+
+    "network#ssid": {
+	"format": " INT: <span color=\"#ee5396\">{essid}</span>"
+    },
+
+    "memory": {
+	"interval": 1,
+	"format": "RAM: <span color=\"#ee5396\">{used}GB</span>",
+    },
+
+    "disk": {
+	"format": "<span color=\"#ee5396\">{used}</span> :DISK",
+    },
+
+    "cpu": {
+	"interval": 2,
+	"format": "<span color=\"#ee5396\">{usage}%</span> :CPU",
+    },
+
+    "custom/gpu-usage": {
+	"format": "GPU: <span color=\"#ee5396\">{}</span>",
+	"exec": "gpu-usage-waybar",
+	"return-type": "json",
+	"on-click": "ghostty -e nvtop"
+    },
+
+    "wireplumber": {
+	"format": "<span color=\"#ee5396\">{volume}%</span> :SPK",
+	"format-muted": "<span color=\"#ee5396\">MUT</span> :SPK",
+    },
+
+    "bluetooth": {
+	"format-connected": "BTH: <span color=\"#ee5396\">{device_alias}</span>",
+	"format-on": "BTH: <span color=\"#ee5396\">None</span>",
+    },
+
+    "custom/separator": {
+	"format": "|"
+    }
+}

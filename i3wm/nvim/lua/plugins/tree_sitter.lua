@@ -1,6 +1,6 @@
 require("tree-sitter-manager").setup({
-    parser_dir = vim.fn.expand("~/.local/share/nvim") .. "/site/parser",
-    query_dir = vim.fn.expand("~/.local/share/nvim") .. "/site/queries",
+    parser_dir = vim.fn.stdpath("data") .. "/site/parser",
+    query_dir = vim.fn.stdpath("data") .. "/site/queries",
 
     ensure_installed = {
 	"python",
